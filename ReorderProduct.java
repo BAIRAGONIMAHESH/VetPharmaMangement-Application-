@@ -109,7 +109,7 @@ public class ReorderProduct extends JFrame {
     // 🔹 Load data from database
     private void loadLowStock() {
         tableModel.setRowCount(0);
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pharmacy", "root", "Mahesh@06122001");
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pharmacy", "root", "");
              PreparedStatement stmt = conn.prepareStatement("SELECT * FROM products WHERE quantity <= 10");
              ResultSet rs = stmt.executeQuery()) {
 
