@@ -16,3 +16,4 @@ Veterinary Pharmacy Management System
 🧪 Login Credentials:
 Admin: admin / admin123  
 User: staff / user123
+use your own MySql Credentials while connecting database 
