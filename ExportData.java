@@ -104,7 +104,7 @@ public class ExportData extends JFrame {
     // 🔹 Load data from MySQL
     private void loadData() {
         tableModel.setRowCount(0);
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pharmacy", "root", "Mahesh@06122001");
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/pharmacy", "root", "");// use your password, url, username 
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery("SELECT * FROM products")) {
 
